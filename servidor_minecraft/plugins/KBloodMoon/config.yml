@@ -1,0 +1,103 @@
+texture-pack:
+  bloodmoon: "https://download.mc-packs.net/pack/28ed6e419f169fcc5f31d53516bc5cdd4ab38a6b.zip"
+  player-choice: true #
+  enabled: false
+  
+# I removed the texturepack i will fix in future 
+# ===== [ WORLD SETTINGS ] ===== #
+world-name: "world"
+
+# ===== [ BLOODMOON EVENT ] ===== #
+bloodmoon:
+  chance: 10  # % For bloodmoon
+  start-time: 14000  # Minecraft ticks (midnight)
+  end-time: 23200    # (approx. sunrise)
+  decision-time: 10000
+
+# ===== [ DIFFICULTY ] ===== #
+mob-spawn-multiplier: 3.0  # Triple mob spawns during Blood Moon
+allowed-mobs:
+  - ZOMBIE
+  - SKELETON
+  - SPIDER
+
+# ===== [ CUSTOM MOBS ] ===== #
+custommobs:
+  blood_zombie:
+    type: ZOMBIE
+    name: "&4☠ &cBlood Zombie &4☠"
+    health: 40.0
+    damage-multiplier: 1.0
+    spawn-chance: 0.5
+    custom-model: 1000
+    effect: SPEED
+    equipment:
+      helmet: IRON_HELMET
+      chestplate: IRON_CHESTPLATE
+      mainhand: IRON_SWORD
+    custom-drop:
+      item: IRON_SWORD
+      chance: 0.5
+      durability-chance: 0.3 #not working
+      item-name: "&cBloodstained Sword"
+      item-lore:
+        - "&7Dropped by a Blood Zombie"
+        - "&7Still warm..."
+      enchantments:
+        DAMAGE_ALL: 2
+        DURABILITY: 1
+
+
+# ===== [ MESSAGES ] ===== #
+messages:
+  prefix: "§8[§cBloodMoon§8]§r "  # Darker, more ominous prefix
+  
+  # === Titles & Subtitles === #
+  bloodmoon-start-title: "§4§l☠ THE BLOOD MOON RISES ☠"
+  bloodmoon-start-subtitle: "§c§oThe night is cursed... Survive!"
+  bloodmoon-end-title: "§a§l☀ THE DAWN BREAKS ☀"
+  bloodmoon-end-subtitle: "§a§oThe nightmare is over... for now."
+  
+  # === Boss Bar === #
+  bossbar-title: "§4☠ §cBlood Moon §4☠" 
+  
+  # === Command Help === #
+  command-help-header: "§4§l☠ §cBlood Moon Commands §4§l☠"
+  command-help-status: "§fCheck Blood Moon progress"
+  command-help-force: "§fTrigger a Blood Moon"
+  command-help-end: "§fEnd the Blood Moon early"
+  command-help-reload: "§fReload the plugin"
+  command-help-unknown: "§c⚠ Unknown command! §7Use §f/bloodmoon help§7."
+  
+  # === Status Command === #
+  command-status-header: "§4§l☠ §cBlood Moon Status §4§l☠"
+  command-status-world: "§8 §eWorld: §f{world}"
+  command-status-day: "§8 §eCycle: §f{day}§7/§f{frequency} §7days"
+  command-status-active: "§8 §eActive: {state}"  # {state} can be §aYes§f/§cNo
+  command-status-mobs: "§8 §eCustom Mobs: §f{mobs}"
+  
+  # === Command Feedback === #
+  command-force-success: "§a✔ §fA Blood Moon has been §cforcibly summoned§f!"
+  command-force-active: "§c✖ §fA Blood Moon is §4already active§f!"
+  command-end-success: "§a✔ §fThe Blood Moon has been §bdispelled§f!"
+  command-end-inactive: "§c✖ §fNo Blood Moon is active!"
+  command-reload-success: "§a✔ §fConfiguration reloaded!"
+  command-no-permission: "§c✖ §fYou lack the required §4permissions§f!"
+  command-world-not-found: "§c⚠ §fWorld §e'{world}' §fnot found! §7Check config."
+  rsp-toggle-on: "§aResource pack loading enabled for Blood Moon."
+  rsp-toggle-off: "§aResource pack loading disabled for Blood Moon."
+  # === Gameplay === #
+  no-sleep: "§c⚠ §fYou cannot sleep during a Blood Moon!"
+  
+  # === Logs (Console) === #
+  log-startup: "§4[BloodMoon] §aPlugin enabled!"
+  log-shutdown: "§4[BloodMoon] §cPlugin disabled!"
+  log-invalid-world: "§4[BloodMoon] §cError: World '{world}' not found!"
+  log-no-custom-mobs: "§4[BloodMoon] §eWarning: No custom mobs defined!"
+  log-invalid-mob-type: "§4[BloodMoon] §cError: Invalid mob type '{mob}'!"
+  log-invalid-material: "§4[BloodMoon] §cError: Invalid material '{material}'!"
+  log-invalid-effect: "§4[BloodMoon] §cError: Invalid effect '{effect}' for mob '{mob}'!"
+  log-bloodmoon-start: "§4[BloodMoon] §aBlood Moon started in §e{world}§a!"
+  log-bloodmoon-end: "§4[BloodMoon] §aBlood Moon ended in §e{world}§a!"
+  
+  

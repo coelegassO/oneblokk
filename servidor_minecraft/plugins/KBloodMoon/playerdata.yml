@@ -1,0 +1,6 @@
+is-bloodmoon: false
+players:
+  Player1:
+    download-resourcepack: true
+  Player2:
+    download-resourcepack: false

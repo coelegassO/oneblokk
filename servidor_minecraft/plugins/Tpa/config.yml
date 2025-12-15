@@ -1,0 +1,8 @@
+messages:
+  teleportRequestSent: "&eTeleport request sent to %target%"
+  teleportRequestReceived: "&e%sender% has sent you a teleport request. Use /tpaaccept or /tpadeny."
+  playerNotFound: "&cPlayer %target% not found."
+  teleportRequestAccepted: "&eTeleporting to %sender%"
+  teleportRequestDenied: "&eTeleport request from %sender% denied."
+  noPendingRequest: "&cNo pending teleport request found."
+  teleportCooldown: "&cYou are on cooldown. Please wait %cooldown% seconds before using /tpa again."
